@@ -186,7 +186,7 @@ class Predictor:
 
 print(os.getcwd())
 predictor = Predictor(
-        model_path=os.path.abspath('UVR-MDX-NET-Inst_HQ_3.onnx'),
+        model_path=os.path.join(os.getcwd(), 'UVR-MDX-NET-Inst_HQ_3.onnx'),
         dim_f=3072,
         dim_t=8,
         n_fft=6144,
